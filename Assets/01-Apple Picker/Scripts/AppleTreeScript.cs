@@ -15,11 +15,14 @@ public float chanceToChangeDirections = 0.1f;
 public float secondsBetweenAppleDrops = 1f;
 
    
-    void Start()
-    {
-        
+    void Start(){
+    Invoke("DropApple", 2f);
     }
-
+    void DropApple(){
+        GameObject apple = Instantiate<GameObject>( applePrefab);
+        apple.transform.position = transform.position;
+        Invoke("DropApple", secondsBetweenAppleDrops);
+    }
   
     void Update()
     { Vector3 pos = transform.position;
@@ -30,18 +33,14 @@ public float secondsBetweenAppleDrops = 1f;
         speed = Mathf.Abs(speed);
     }
     else if (pos.x > leftAndRightEdge){
-        speed = Mathf.Abs(speed);
+        speed = -Mathf.Abs(speed);
     }
-    else if (Random.value < chanceToChangeDirections){
-        speed *= -1;
-    }
-
     }
 
     void FixedUpdate() {
         if (Random.value < chanceToChangeDirections){
-            speed *= -1;
+            speed *= -1; 
         }
     }
-}
 
+}

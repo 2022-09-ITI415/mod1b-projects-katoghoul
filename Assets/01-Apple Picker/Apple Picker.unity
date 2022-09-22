@@ -352,9 +352,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5489529046012430757, guid: 809ab2a4fec9bd84c8f53c63a0c7073f, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7576300149481656991, guid: 809ab2a4fec9bd84c8f53c63a0c7073f, type: 3}
       propertyPath: m_Name
       value: Apple Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 7576300149481656991, guid: 809ab2a4fec9bd84c8f53c63a0c7073f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933575866944879574, guid: 809ab2a4fec9bd84c8f53c63a0c7073f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933575867193857915, guid: 809ab2a4fec9bd84c8f53c63a0c7073f, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 809ab2a4fec9bd84c8f53c63a0c7073f, type: 3}
@@ -375,8 +391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e278b7fa0a34c1840b53a5c972ddcb79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  applePrefab: {fileID: 0}
+  applePrefab: {fileID: 5713721839069972859, guid: 41b5b12f2710f814d8741ca5b920aece, type: 3}
   speed: 10
   leftAndRightEdge: 20
-  chanceToChangeDirections: 0.1
+  chanceToChangeDirections: 0.02
   secondsBetweenAppleDrops: 1
