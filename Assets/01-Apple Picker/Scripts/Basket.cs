@@ -3,7 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Basket : MonoBehaviour
-{
+{[Header("Set Dynamically")]
+public Text scoreGT;
+
+void Start() {
+    GameObject scoreGO = GameObject.Find("ScoreCounter");
+    scoreGT = scoreGO.GetComponent<Text>();
+    scoreGT.text = "0";
+}
     // Start is called before the first frame update
  
     // Update is called once per frame
@@ -16,13 +23,17 @@ public class Basket : MonoBehaviour
 
     Vector3 pos = this.transform.position;
     pos.x = mousePos3D.x;
-    this.transform.position = pos;
+    this.transform.position = pos;}
+
         
     void OnCollisionEnter(Collision coll) {
         GameObject collidedWith = coll.gameObject;
         if (collidedWith.tag == "Apple"){
             Destroy( collidedWith );
+
+            int score = int.Parse(scoreGT.test);
+            score += 100;
+            score.GT.text = score.ToString();
         }
     }
     }
-}
