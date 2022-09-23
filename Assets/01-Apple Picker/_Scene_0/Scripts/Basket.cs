@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Basket : MonoBehaviour
 {[Header("Set Dynamically")]
-public text scoreGT;
+public Text scoreGT;
 
 void Start() {
     GameObject scoreGO = GameObject.Find("ScoreCounter");
@@ -31,9 +32,13 @@ void Start() {
         if (collidedWith.tag == "Apple"){
             Destroy( collidedWith );
 
-            int score = int.Parse(scoreGT.test);
+            int score = int.Parse(scoreGT.text);
             score += 100;
-            score.GT.text = score.ToString();
+            scoreGT.text = score.ToString();
+
+            if (score > HighScore.score) {
+                HighScore.score = score;
+            }
         }
     }
     }

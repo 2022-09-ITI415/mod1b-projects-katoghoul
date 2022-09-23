@@ -19,8 +19,8 @@ public float secondsBetweenAppleDrops = 1f;
     Invoke("DropApple", 2f);
     }
     void DropApple(){
-        GameObject apple = Instantiate<GameObject>( applePrefab);
-        apple.transform.position = transform.position;
+        GameObject Apple = Instantiate<GameObject>( applePrefab);
+        Apple.transform.position = transform.position;
         Invoke("DropApple", secondsBetweenAppleDrops);
     }
   
