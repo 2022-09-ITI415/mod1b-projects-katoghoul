@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Basket : MonoBehaviour
 {[Header("Set Dynamically")]
-public Text scoreGT;
+public text scoreGT;
 
 void Start() {
     GameObject scoreGO = GameObject.Find("ScoreCounter");
