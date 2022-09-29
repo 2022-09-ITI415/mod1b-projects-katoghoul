@@ -8,6 +8,7 @@ using UnityEngine;
     [Header( "Set in Inspector" )]
 
     public float minDist = 0.1f;
+    
     private LineRenderer line;
     private GameObject _poi;
     private List<Vector3> points;
@@ -46,7 +47,7 @@ using UnityEngine;
     }
 
     if ( points.Count == 0 ) { 
-    Vector3 launchPosDiff = pt -Slingshot.LAUNCH_POS; 
+    Vector3 launchPosDiff = pt -SlingShot.LAUNCH_POS; 
 
     points.Add( pt + launchPosDiff );
     points.Add(pt);
