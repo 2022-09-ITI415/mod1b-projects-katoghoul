@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class SlingShot : MonoBehaviour {
     static private SlingShot S;
     [Header("Set in Inspector")] // a
@@ -73,8 +72,8 @@ public class SlingShot : MonoBehaviour {
         projectileRigidbody.velocity = -mouseDelta * velocityMult;
         FollowCam.POI = projectile;
         projectile = null;
-        MissionDemolition.ShotFired();
-       ProjectileLine.S.poi = projectile;
+        //MissionDemolition.ShotFired();
+       // ProjectileLine.S.poi = projectile;
        }
 }
 }
