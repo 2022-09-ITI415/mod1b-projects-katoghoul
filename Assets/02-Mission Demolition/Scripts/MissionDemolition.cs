@@ -61,8 +61,8 @@ mode = GameMode.playing;
 }
 void UpdateGUI() {
 
-uitLevel.text = "Level: " +(level+1 )+ " of 3";
-uitShots.text = "Shots Taken: " +(shotsTaken);
+uitLevel.text = "Level: " +(level+1 )+ " of " +levelMax;
+uitShots.text = "Shots Taken: " +shotsTaken;
 }
 void Update() {
 UpdateGUI();
