@@ -2198,7 +2198,6 @@ GameObject:
   - component: {fileID: 1955562387}
   - component: {fileID: 1955562389}
   - component: {fileID: 1955562388}
-  - component: {fileID: 1955562390}
   m_Layer: 5
   m_Name: UIText_Level
   m_TagString: Untagged
@@ -2325,29 +2324,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955562386}
   m_CullTransparentMesh: 1
---- !u!114 &1955562390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1955562386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8635633f91f354c4cb5451198442a28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uitLevel: {fileID: 0}
-  uitShots: {fileID: 0}
-  uitButton: {fileID: 0}
-  castlePos: {x: 0, y: 0, z: 0}
-  castles: []
-  level: 0
-  levelMax: 0
-  shotsTaken: 0
-  castle: {fileID: 0}
-  mode: 0
-  showing: Show Slingshot
 --- !u!1 &2013877417
 GameObject:
   m_ObjectHideFlags: 0
@@ -2408,7 +2384,6 @@ GameObject:
   - component: {fileID: 2021372040}
   - component: {fileID: 2021372039}
   - component: {fileID: 2021372038}
-  - component: {fileID: 2021372042}
   m_Layer: 5
   m_Name: UIButton_View
   m_TagString: Untagged
@@ -2531,29 +2506,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2021372036}
   m_CullTransparentMesh: 1
---- !u!114 &2021372042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2021372036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8635633f91f354c4cb5451198442a28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uitLevel: {fileID: 0}
-  uitShots: {fileID: 0}
-  uitButton: {fileID: 0}
-  castlePos: {x: 0, y: 0, z: 0}
-  castles: []
-  level: 0
-  levelMax: 0
-  shotsTaken: 0
-  castle: {fileID: 0}
-  mode: 0
-  showing: Show Slingshot
 --- !u!1 &2113094614
 GameObject:
   m_ObjectHideFlags: 0
