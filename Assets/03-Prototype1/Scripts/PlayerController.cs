@@ -24,9 +24,9 @@ public class PlayerController : MonoBehaviour {
 		rb = GetComponent<Rigidbody>();
 
 	
-	//	count = 0;
+		count = 0;
 
-	//	SetCountText ();
+		SetCountText ();
 
           
     //            winTextObject.SetActive(false);
@@ -40,20 +40,20 @@ public class PlayerController : MonoBehaviour {
 		rb.AddForce (movement * speed);
 	}
 
-	//void OnTriggerEnter(Collider other) 
-	//{
+	void OnTriggerEnter(Collider other) 
+	{
 		
-	//	if (other.gameObject.CompareTag ("PickUp"))
-	//	{
-	//		other.gameObject.SetActive (false);
+	if (other.gameObject.CompareTag("Hole"))
+		{
+			other.gameObject.SetActive (false);
 
 			
-	//		count = count + 1;
+			count = count + 1;
 
 			
-	//		SetCountText ();
-	//	}
-	//}
+		//	SetCountText ();
+		}
+	}
 
         void OnMove(InputValue value)
         {
@@ -63,14 +63,14 @@ public class PlayerController : MonoBehaviour {
         	movementY = v.y;
         }
 
-       // void SetCountText()
-	//{
+        void SetCountText()
+	{
 	//	countText.text = "Count: " + count.ToString();
 
-	//	if (count >= 12) 
-	//	{
+		if (count >= 12) 
+		{
                     
-     //               winTextObject.SetActive(true);
-	//	}
+    //               winTextObject.SetActive(true);
+		}
 	}
-//}
+}
