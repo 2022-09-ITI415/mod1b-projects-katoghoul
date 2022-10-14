@@ -1,9 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using System;
 
-public class Hole : MonoBehaviour
-{
+public class Hole : MonoBehaviour {
+
+[Header("Set Dynamically")]
+public text scoreGT; // a
+void Start() {
+
+GameObject scoreGO = GameObject.Find("LevelCounter"); 
+
+scoreGT = scoreGO.GetComponent<Text>(); 
+
+scoreGT.text = "0";
+}
 	static public bool holeMet = false;
 
 	void OnTriggerEnter(Collider other) {
@@ -14,17 +26,10 @@ public class Hole : MonoBehaviour
 
 			other.gameObject.SetActive (false);
 
-			Material mat = GetComponent<Renderer>().material;
-			Color c = mat.color;
-			c.a = 1;
-			mat.color = c;
+
+
 		}
 	}
-
-    void Start()
-    {
-        
-    }
 
     void Update()
     {

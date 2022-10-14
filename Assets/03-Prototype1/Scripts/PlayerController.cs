@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour {
 		
 	if (other.gameObject.CompareTag("Hole"))
 		{
-			other.gameObject.SetActive (false);
+			// other.gameObject.SetActive (false);
 
 			
 			count = count + 1;
