@@ -6,18 +6,16 @@ using System;
 
 public class Hole : MonoBehaviour {
 
-[Header("Set Dynamically")]
-public text scoreGT; // a
+[Header("Set in Inspector")]
+public GameObject LevelEnd;
+
+
 void Start() {
-
-GameObject scoreGO = GameObject.Find("LevelCounter"); 
-
-scoreGT = scoreGO.GetComponent<Text>(); 
-
-scoreGT.text = "0";
-}
-	static public bool holeMet = false;
-
+	
+	LevelEnd.SetActive(false);
+	
+}	static public bool holeMet = false;
+	
 	void OnTriggerEnter(Collider other) {
 	
 		if (other.gameObject.CompareTag("Ball")) {
@@ -25,14 +23,11 @@ scoreGT.text = "0";
 			Hole.holeMet = true;
 
 			other.gameObject.SetActive (false);
+		LevelEnd.SetActive(true);}
 
-
-
-		}
-	}
-
+		
     void Update()
     {
         
     }
-}
+}}
